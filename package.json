@@ -1,5 +1,5 @@
 {
-  "name": "koishi-plugin-nfa-stock-monitor",
+  "name": "@vteam-studio/koishi-plugin-nfa-stock-monitor",
   "version": "1.0.1",
   "description": "Koishi插件：NFA库存监控 - 快速获取NFA库存信息",
   "main": "lib/index.js",
@@ -26,6 +26,9 @@
   "homepage": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker#readme",
   "bugs": {
     "url": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
     "koishi": "^4.0.0"
