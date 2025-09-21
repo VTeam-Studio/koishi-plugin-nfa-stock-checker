@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-nfa-stock-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Koishi插件：NFA库存监控 - 快速获取NFA库存信息",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
