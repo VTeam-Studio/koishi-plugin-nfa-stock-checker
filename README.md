@@ -8,6 +8,8 @@
 - 🛠️ 可配置的API参数
 - 📊 实时库存数据展示
 - 💡 简单易用的单次查询
+- 🎨 支持自定义消息模板
+- 🧪 内置消息模板测试功能
 
 ## 安装
 
@@ -31,26 +33,41 @@ plugins:
     apiUrl: "https://mcheika.lol/user/api/index/stock"
     cookie: "你的Cookie值"
     itemId: "2"
+    messageTemplate: "当前NFA库存: {stock}个"
 ```
 
 ### 配置项说明
 
 - `apiUrl`: API接口地址（默认：https://mcheika.lol/user/api/index/stock）
-- `cookie`: 请求所需的Cookie值（必填）
+- `cookie`: 请求所需的Cookie值（可选，有默认值）
 - `itemId`: 商品ID（默认：2）
+- `messageTemplate`: 自定义消息模板（默认：The Stock of NFA : {stock}）
 
 ## 使用方法
 
 ### 命令列表
 
 - `/nfa` - 获取当前NFA库存信息
+- `/nfa-test <模板>` - 测试自定义消息模板
 
 ### 使用示例
 
+#### 基本使用
 ```
 用户: /nfa
 机器人: The Stock of NFA : 100
 ```
+
+#### 自定义消息模板
+```
+用户: /nfa-test "📦 当前NFA库存: {stock}个"
+机器人: 测试结果：📦 当前NFA库存: 100个
+```
+
+#### 消息模板示例
+- `"当前NFA库存: {stock}个"` → 当前NFA库存: 100个
+- `"📦 NFA库存状态: {stock}"` → 📦 NFA库存状态: 100
+- `"The Stock of NFA : {stock}"` → The Stock of NFA : 100
 
 ## 开发
 

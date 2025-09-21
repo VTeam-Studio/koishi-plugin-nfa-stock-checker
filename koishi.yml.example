@@ -8,4 +8,10 @@ plugins:
     
     # 商品ID
     itemId: "2"
+    
+    # 自定义消息模板（可选，使用 {stock} 作为库存数量占位符）
+    # 示例：
+    # messageTemplate: "当前NFA库存: {stock}个"
+    # messageTemplate: "📦 NFA库存状态: {stock}"
+    # messageTemplate: "The Stock of NFA : {stock}"
 
