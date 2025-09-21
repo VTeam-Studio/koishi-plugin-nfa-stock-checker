@@ -1,0 +1,57 @@
+{
+  "name": "@vteam-studio/koishi-plugin-nfa-stock-monitor",
+  "version": "1.1.0",
+  "description": "Koishi插件：NFA库存监控 - 快速获取NFA库存信息",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "koishi",
+    "plugin",
+    "nfa",
+    "stock",
+    "monitor",
+    "inventory",
+    "api"
+  ],
+  "author": "michaelwucoc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker.git"
+  },
+  "homepage": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker#readme",
+  "bugs": {
+    "url": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "koishi": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "koishi": {
+    "description": {
+      "zh": "NFA库存监控插件，快速获取NFA库存信息",
+      "en": "NFA Stock Monitor Plugin - Quick access to NFA stock information"
+    },
+    "locales": [
+      "zh"
+    ]
+  }
+}

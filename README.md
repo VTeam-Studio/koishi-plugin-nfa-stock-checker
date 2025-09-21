@@ -13,6 +13,17 @@
 
 ## 安装
 
+### 从npm安装
+```bash
+npm install koishi-plugin-nfa-stock-monitor
+```
+
+### 从GitHub Packages安装
+```bash
+npm install @vteam-studio/koishi-plugin-nfa-stock-monitor
+```
+
+### 从源码安装
 1. 将插件文件夹放入Koishi项目的`plugins`目录
 2. 安装依赖：
    ```bash
