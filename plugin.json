@@ -1,0 +1,49 @@
+{
+  "name": "NFA库存监控",
+  "description": "快速获取NFA库存信息的Koishi插件",
+  "version": "1.0.0",
+  "author": "michaelwucoc",
+  "license": "MIT",
+  "keywords": ["nfa", "stock", "monitor", "inventory"],
+  "homepage": "https://github.com/VTeam-Studio/koishi-plugin-NFA-Stock-Monitor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VTeam-Studio/koishi-plugin-NFA-Stock-Monitor.git"
+  },
+  "main": "lib/index.js",
+  "peerDependencies": {
+    "koishi": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "features": [
+    "快速获取NFA库存信息",
+    "可配置的API参数",
+    "实时库存数据展示",
+    "简单易用的单次查询"
+  ],
+  "commands": [
+    {
+      "name": "nfa",
+      "description": "获取NFA库存信息"
+    }
+  ],
+  "config": {
+    "apiUrl": {
+      "type": "string",
+      "default": "https://mcheika.lol/user/api/index/stock",
+      "description": "API接口地址"
+    },
+    "cookie": {
+      "type": "string",
+      "default": "_ok1_=OQjMRsSlWTvaBJGEBGOhyX03gXTXMGCpY/hbQkcNCKhAfakznli7RrxdZaYjFbPxV7UYMjZLjq48Nnc8fFQOHGqAtEUMb2XJ4w7VUt9heu/HwogXLAcGFdARPViZjeza",
+      "description": "请求Cookie"
+    },
+    "itemId": {
+      "type": "string",
+      "default": "2",
+      "description": "商品ID"
+    }
+  }
+}
