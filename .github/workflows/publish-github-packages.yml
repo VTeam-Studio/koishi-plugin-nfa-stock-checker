@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@vteam-studio'
           
       - name: Install dependencies
         run: npm ci
