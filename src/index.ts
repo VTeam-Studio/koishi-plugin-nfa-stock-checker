@@ -11,7 +11,7 @@ export interface Config {
 
 export const Config: Schema<Config> = Schema.object({
   apiUrl: Schema.string().default('https://mcheika.lol/user/api/index/stock').description('API接口地址'),
-  cookie: Schema.string().required().description('请求Cookie'),
+  cookie: Schema.string().default('_ok1_=OQjMRsSlWTvaBJGEBGOhyX03gXTXMGCpY/hbQkcNCKhAfakznli7RrxdZaYjFbPxV7UYMjZLjq48Nnc8fFQOHGqAtEUMb2XJ4w7VUt9heu/HwogXLAcGFdARPViZjeza').description('请求Cookie'),
   itemId: Schema.string().default('2').description('商品ID')
 })
 
