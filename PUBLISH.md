@@ -22,11 +22,11 @@
 {
   "repository": {
     "type": "git",
-    "url": "https://github.com/你的实际用户名/koishi-plugin-NFA-Stock-Monitor.git"
+    "url": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker.git"
   },
-  "homepage": "https://github.com/你的实际用户名/koishi-plugin-NFA-Stock-Monitor#readme",
+  "homepage": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker#readme",
   "bugs": {
-    "url": "https://github.com/你的实际用户名/koishi-plugin-NFA-Stock-Monitor/issues"
+    "url": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker/issues"
   }
 }
 ```
@@ -34,10 +34,10 @@
 **plugin.json**
 ```json
 {
-  "homepage": "https://github.com/你的实际用户名/koishi-plugin-NFA-Stock-Monitor",
+  "homepage": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/你的实际用户名/koishi-plugin-NFA-Stock-Monitor.git"
+    "url": "https://github.com/VTeam-Studio/koishi-plugin-nfa-stock-checker.git"
   }
 }
 ```
