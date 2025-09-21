@@ -49,7 +49,13 @@ export function apply(ctx: Context, config: Config) {
 
   // 注册 /nfa 命令 - 单次获取库存
   ctx.command('nfa', '获取NFA库存信息')
-    .action(async () => {
-      return await getStock()
+    .action(async ({ session }) => {
+      try {
+        const stockInfo = await getStock()
+        return stockInfo
+      } catch (error) {
+        console.error('获取库存时发生错误:', error)
+        return '获取库存时发生错误，请稍后重试'
+      }
     })
 }
