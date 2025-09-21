@@ -1,0 +1,14 @@
+# Koishi配置文件示例
+# 将此文件复制为 koishi.yml 并根据需要修改配置
+
+plugins:
+  nfa-stock-monitor:
+    # API接口地址
+    apiUrl: "https://mcheika.lol/user/api/index/stock"
+    
+    # 请求Cookie（必填）
+    # 请替换为你的实际Cookie值
+    cookie: "_ok1_=OQjMRsSlWTvaBJGEBGOhyX03gXTXMGCpY/hbQkcNCKhAfakznli7RrxdZaYjFbPxV7UYMjZLjq48Nnc8fFQOHGqAtEUMb2XJ4w7VUt9heu/HwogXLAcGFdARPViZjeza"
+    
+    # 商品ID
+    itemId: "2"
