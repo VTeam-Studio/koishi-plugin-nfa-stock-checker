@@ -1,7 +1,7 @@
 {
   "name": "NFA库存监控",
   "description": "快速获取NFA库存信息的Koishi插件",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "author": "michaelwucoc",
   "license": "MIT",
   "keywords": ["nfa", "stock", "monitor", "inventory"],
