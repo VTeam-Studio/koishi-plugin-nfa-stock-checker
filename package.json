@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-nfa-stock-monitor",
-  "version": "1.1.3",
-  "description": "Koishi插件：NFA库存监控 - 快速获取NFA库存信息",
+  "version": "1.2.0",
+  "description": "Koishi插件：NFA库存监控 - 支持自定义指令和多商品库存查询",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -15,7 +15,9 @@
     "stock",
     "monitor",
     "inventory",
-    "api"
+    "api",
+    "custom-commands",
+    "multi-product"
   ],
   "author": "michaelwucoc",
   "license": "MIT",
@@ -47,8 +49,8 @@
   },
   "koishi": {
     "description": {
-      "zh": "NFA库存监控插件，快速获取NFA库存信息",
-      "en": "NFA Stock Monitor Plugin - Quick access to NFA stock information"
+      "zh": "NFA库存监控插件，支持自定义指令和多商品库存查询",
+      "en": "NFA Stock Monitor Plugin - Support custom commands and multi-product stock queries"
     },
     "locales": [
       "zh"
