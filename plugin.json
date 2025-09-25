@@ -21,12 +21,27 @@
     "快速获取NFA库存信息",
     "可配置的API参数",
     "实时库存数据展示",
-    "简单易用的单次查询"
+    "简单易用的单次查询",
+    "支持自定义指令",
+    "支持查询指定商品ID库存",
+    "可配置消息模板"
   ],
   "commands": [
     {
       "name": "nfa",
       "description": "获取NFA库存信息"
+    },
+    {
+      "name": "nfa-query",
+      "description": "查询指定商品ID的库存"
+    },
+    {
+      "name": "nfa-test",
+      "description": "测试自定义消息模板"
+    },
+    {
+      "name": "nfa-help",
+      "description": "显示NFA库存监控插件帮助信息"
     }
   ],
   "config": {
@@ -43,7 +58,21 @@
     "itemId": {
       "type": "string",
       "default": "2",
-      "description": "商品ID"
+      "description": "默认商品ID"
+    },
+    "messageTemplate": {
+      "type": "string",
+      "default": "The Stock of NFA : {stock}",
+      "description": "自定义消息模板，使用 {stock} 作为库存数量占位符"
+    },
+    "customCommands": {
+      "type": "array",
+      "default": [
+        { "command": "mfa", "itemId": "3", "description": "获取MFA库存信息" },
+        { "command": "stock", "itemId": "2", "description": "获取NFA库存信息" },
+        { "command": "库存", "itemId": "2", "description": "获取NFA库存信息" }
+      ],
+      "description": "自定义指令配置，每个指令可以对应不同的商品ID"
     }
   }
 }
